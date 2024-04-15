@@ -12,33 +12,48 @@
     "nodemailer": "^6.9.13"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^1"
+    "@cap-js/sqlite": "^1",
+    "@sap/ux-specification": "^1.120.8"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-btp_ui_spacefarers": "cds watch --open btp_ui_spacefarers/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {
       "db": {
         "kind": "sqlite",
-        "credentials": { "url": "db.sqlite" } 
-     },
+        "credentials": {
+          "url": "db.sqlite"
+        }
+      },
       "auth": {
         "kind": "mocked",
         "users": {
           "your@father.com": {
             "password": "",
-            "attr": {"originPlanet": "Tatooine"},
-            "roles": ["admin"]
+            "attr": {
+              "originPlanet": "Tatooine"
+            },
+            "roles": [
+              "admin"
+            ]
           },
           "lea@skywalker.com": {
             "password": "",
-            "attr": {"originPlanet": "Alderaan"},
-            "roles": ["user"]
+            "attr": {
+              "originPlanet": "Alderaan"
+            },
+            "roles": [
+              "user"
+            ]
           },
           "*": false
         }
       }
     }
-    }
+  },
+  "sapux": [
+    "app/btp_ui_spacefarers"
+  ]
 }

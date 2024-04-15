@@ -12,6 +12,11 @@ entity GalacticSpacefarers : cuid, managed {
     email: String(255);
     department: Association to one Departments;
     position: Association to one Positions;
+    originPlanet: String(255);
+    spacesuitColor: String(255);
+    stardustCollections: Integer;
+    wormholeNavigationSkill: Integer @assert.range: [0,5];
+
 }
 
 entity Departments: cuid, managed {

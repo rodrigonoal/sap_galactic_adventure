@@ -16,5 +16,25 @@
   },
   "scripts": {
     "start": "cds-serve"
-  }
+  },
+  "cds": {
+    "requires": {
+      "auth": {
+        "kind": "mocked",
+        "users": {
+          "your@father.com": {
+            "password": "",
+            "attr": {"originPlanet": "Tatooine"},
+            "roles": ["admin"]
+          },
+          "lea@skywalker.com": {
+            "password": "",
+            "attr": {"originPlanet": "Alderaan"},
+            "roles": ["user"]
+          },
+          "*": false
+        }
+      }
+    }
+    }
 }

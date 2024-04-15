@@ -11,7 +11,7 @@ module.exports = function () {
 		if (stardustCollection < 0)
 			req.error`Invalid Stardust Collection: must be >= 0`;
 
-		if (wormholeNavigationSkill < 8)
+		if (wormholeNavigationSkill < 10)
 			req.data.wormholeNavigationSkill += navigationSkillBonus;
 
 		req.data.stardustCollection += stardustBonus;

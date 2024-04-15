@@ -5,16 +5,20 @@ module.exports = function () {
 	this.before('CREATE', 'GalacticSpacefarers', (req) => {
 		const { stardustCollection, wormholeNavigationSkill } = req.data;
 
-		const stardustBonus = 100;
+        const maximumStardust = 255;
+        const maximumNavigationSkill = 10;
+
+		const stardustBonus = 15;
 		const navigationSkillBonus = 1;
 
-		if (stardustCollection < 0)
-			req.error`Invalid Stardust Collection: must be >= 0`;
+		if (stardustCollection < maximumStardust - stardustBonus) {
+            req.data.stardustCollection += stardustBonus;
+        }else {
+            req.data.stardustCollection = 255;
+        }
 
-		if (wormholeNavigationSkill < 10)
+		if (wormholeNavigationSkill < maximumNavigationSkill)
 			req.data.wormholeNavigationSkill += navigationSkillBonus;
-
-		req.data.stardustCollection += stardustBonus;
 	});
 
 	this.after('CREATE', 'GalacticSpacefarers', (galacticSpacefarer) => {

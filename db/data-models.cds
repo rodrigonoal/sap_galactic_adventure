@@ -7,19 +7,19 @@ using {
 
 @assert.unique: {email: [email]}
 
-entity GalacticSpacefarers                                 @(Capabilities: {
+entity GalacticSpacefarers                                @(Capabilities: {
     InsertRestrictions.Insertable: true,
     UpdateRestrictions.Updatable : true,
     DeleteRestrictions.Deletable : true
 }) : cuid, managed {
-    name                    : String(255)                  @mandatory;
-    email                   : String(255)                  @mandatory;
-    department              : Association to one Departments  @mandatory  @assert.target;
-    position                : Association to one Positions @mandatory;
-    originPlanet            : String(255)                  @mandatory;
-    spacesuitColor          : String(255)                  @mandatory;
-    stardustCollection      : Integer default 0;
-    wormholeNavigationSkill : Integer                      @assert.range enum {
+    name                    : String(255)                 @mandatory  @Core.Immutable;
+    email                   : String(255)                 @mandatory  @Core.Immutable;
+    department              : Association to one Departments          @mandatory  @Core.Immutable  @assert.target;
+    position                : Association to one Positions            @mandatory  @Core.Immutable  @assert.target;
+    originPlanet            : String(255)                 @mandatory  @Core.Immutable;
+    spacesuitColor          : String(255) default 'White' @mandatory;
+    stardustCollection      : UInt8 default 0             @mandatory;
+    wormholeNavigationSkill : Integer                     @mandatory  @Core.Immutable  @assert.range  enum {
         none          = 0;
         very_weak     = 1;
         weak          = 2;

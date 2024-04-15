@@ -14,7 +14,7 @@ entity GalacticSpacefarers : cuid, managed {
     position: Association to one Positions;
     originPlanet: String(255);
     spacesuitColor: String(255);
-    stardustCollections: Integer;
+    stardustCollection: Integer;
     wormholeNavigationSkill: Integer @assert.range: [0,5];
 
 }

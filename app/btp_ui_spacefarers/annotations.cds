@@ -21,6 +21,11 @@ annotate service.GalacticSpacefarers with @(UI: {
             },
             {
                 $Type: 'UI.DataField',
+                Label: 'Position',
+                Value: position.name,
+            },
+            {
+                $Type: 'UI.DataField',
                 Label: 'Spacesuit Color',
                 Value: spacesuitColor,
             },
@@ -48,7 +53,10 @@ annotate service.GalacticSpacefarers with @(UI: {
         TypeName      : 'Galactic Spacefarer',
         TypeNamePlural: 'Galactic Spacefarers'
     },
-    SelectionFields                    : [position_id],
+    SelectionFields                    : [
+        position_ID,
+        // position.department_ID // filter selection
+    ],
     DataPoint #WormholeNavigationRating: {
         Value        : wormholeNavigationSkill,
         TargetValue  : 10,
@@ -124,11 +132,30 @@ annotate service.GalacticSpacefarers with {
             },
             {
                 $Type            : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty: 'name',
+                ValueListProperty: 'name'
             },
         ],
     }
 };
+
+// FILTER OPTIONS FOR DEPARTMENT
+// annotate service.GalacticSpacefarers with {
+//     department @Common.ValueList: {
+//         $Type         : 'Common.ValueListType',
+//         CollectionPath: 'Departments',
+//         Parameters    : [
+//             {
+//                 $Type            : 'Common.ValueListParameterInOut',
+//                 LocalDataProperty: position.department_ID,
+//                 ValueListProperty: 'ID',
+//             },
+//             {
+//                 $Type            : 'Common.ValueListParameterDisplayOnly',
+//                 ValueListProperty: 'name'
+//             },
+//         ],
+//     }
+// };
 
 annotate SpacefarerService.GalacticSpacefarers with {
     name                    @title: 'Name';

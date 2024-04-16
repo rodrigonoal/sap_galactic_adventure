@@ -14,7 +14,6 @@ entity GalacticSpacefarers                                @(Capabilities: {
 }) : cuid, managed {
     name                    : String(255)                 @mandatory  @Core.Immutable;
     email                   : String(255)                 @mandatory  @Core.Immutable;
-    department              : Association to one Departments          @mandatory  @Core.Immutable  @assert.target;
     position                : Association to one Positions            @mandatory  @Core.Immutable  @assert.target;
     originPlanet            : String(255)                 @mandatory  @Core.Immutable;
     spacesuitColor          : String(255) default 'White' @mandatory;
@@ -36,8 +35,6 @@ entity GalacticSpacefarers                                @(Capabilities: {
 
 entity Departments : cuid, managed {
     name        : String(255) @mandatory;
-    spacefarers : Association to many GalacticSpacefarers
-                      on spacefarers.department = $self;
     positions   : Association to many Positions
                       on positions.department = $self;
 }

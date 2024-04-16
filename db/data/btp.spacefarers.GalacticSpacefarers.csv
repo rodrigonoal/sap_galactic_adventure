@@ -1,16 +1,19 @@
 name,stardustCollection,wormholeNavigationSkill,originPlanet,spacesuitColor,email,position_ID,department_ID
-Lea,200,2,Alderaan,White,lea@skywalker.com,4d243c47-94bf-436e-a918-eeeeb9393b7f,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
+Leia,200,2,Alderaan,White,leia@skywalker.com,4d243c47-94bf-436e-a918-eeeeb9393b7f,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
 Lord Vader,66,5,Tatooine, Black,your@father.com,5576e024-4a40-43f0-b7c9-533c8ae7270e,1f98e726-8742-4d79-b74f-0bc41aeddefc
 Rey,150,6,Jakku,Beige,rey@jediorder.com,09d93bae-44a4-4fef-aa13-2bf8d3e30a08,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
-Han Solo,100,7,Corellia,Blue,han@solo.com,2c845f14-351f-49cf-b186-4fdb3d9f29be,5900c1d9-7c63-4726-8d84-9f227022dae1
-Padmé Amidala,180,5,Naboo,Purple,padme@naboo.com,32fb6c88-93c9-48b8-aec0-3c442dd38381,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
+Han Solo,100,7,Alderaan,Blue,han@solo.com,2c845f14-351f-49cf-b186-4fdb3d9f29be,5900c1d9-7c63-4726-8d84-9f227022dae1
+Padmé Amidala,180,5,Alderaan,Purple,padme@naboo.com,32fb6c88-93c9-48b8-aec0-3c442dd38381,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
 Lando Calrissian,130,8,Alderaan,Yellow,lando@calrissian.com,86757c8c-894e-4e47-8372-cb2028e5240b,fffe74e7-0bf6-4f9f-9c8d-d3da8066d1ec
-Chewbacca,90,7,Kashyyyk,Brown,chewie@kashyyyk.com,6a1ab12f-ed76-4345-8266-bb7d123f96e9,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
-Finn,110,6,Earth,Grey,finn@resistance.com,5576e024-4a40-43f0-b7c9-533c8ae7270e,1f98e726-8742-4d79-b74f-0bc41aeddefc
-Poe Dameron,160,9,Yavin IV,Orange,poe@xwing.com,32fb6c88-93c9-48b8-aec0-3c442dd38381,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
-BB-8,80,4,Earth,Orange,bb8@droid.com,cbe453c7-53ab-458a-9f8f-2eb1f3ba9d1d,fffe74e7-0bf6-4f9f-9c8d-d3da8066d1ec
+Chewbacca,90,7,Alderaan,Brown,chewie@kashyyyk.com,6a1ab12f-ed76-4345-8266-bb7d123f96e9,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
+Finn,110,6,Jakku,Grey,finn@resistance.com,5576e024-4a40-43f0-b7c9-533c8ae7270e,1f98e726-8742-4d79-b74f-0bc41aeddefc
+Poe Dameron,160,9,Jakku,Orange,poe@xwing.com,32fb6c88-93c9-48b8-aec0-3c442dd38381,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
+BB-8,80,4,Jakku,Orange,bb8@droid.com,cbe453c7-53ab-458a-9f8f-2eb1f3ba9d1d,fffe74e7-0bf6-4f9f-9c8d-d3da8066d1ec
 R2-D2,70,5,Alderaan,Blue,r2d2@droid.com,cbe453c7-53ab-458a-9f8f-2eb1f3ba9d1d,fffe74e7-0bf6-4f9f-9c8d-d3da8066d1ec
 C-3PO,60,3,Tatooine,Gold,c3po@droid.com,dc26ca40-2489-4da3-b29e-69e7afbed549,fffe74e7-0bf6-4f9f-9c8d-d3da8066d1ec
-Kylo Ren,90,7,Chandrila,Black,kylo@firstorder.com,5576e024-4a40-43f0-b7c9-533c8ae7270e,1f98e726-8742-4d79-b74f-0bc41aeddefc
-General Hux,100,6,Arkanis,Grey,hux@firstorder.com,5576e024-4a40-43f0-b7c9-533c8ae7270e,1f98e726-8742-4d79-b74f-0bc41aeddefc
-Luke Skywalker,200,10,Tatooine,White,luke@skywalker.com,5576e024-4a40-43f0-b7c9-533c8ae7270e,1f98e726-8742-4d79-b74f-0bc41aeddefc
+Kylo Ren,90,7,Jakku,Black,kylo@firstorder.com,5576e024-4a40-43f0-b7c9-533c8ae7270e,1f98e726-8742-4d79-b74f-0bc41aeddefc
+General Hux,20,6,Jakku,Grey,hux@firstorder.com,5576e024-4a40-43f0-b7c9-533c8ae7270e,1f98e726-8742-4d79-b74f-0bc41aeddefc
+Luke Skywalker,30,10,Tatooine,White,luke@skywalker.com,5576e024-4a40-43f0-b7c9-533c8ae7270e,1f98e726-8742-4d79-b74f-0bc41aeddefc
+Obi-Wan Kenobi,100,97,Tatooine,Beige,obiwan@jedi.com,5089e0b1-9c3a-4770-9c8a-c86e88604608,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
+Boba Fett,150,2,Alderaan,Green,boba@fett.com,6a1ab12f-ed76-4345-8266-bb7d123f96e9,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
+Yoda,250,2,Alderaan,Brown,yoda@jedi.com,86757c8c-894e-4e47-8372-cb2028e5240b,fffe74e7-0bf6-4f9f-9c8d-d3da8066d1ec

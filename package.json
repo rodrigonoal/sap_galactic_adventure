@@ -39,10 +39,19 @@
               "admin"
             ]
           },
-          "lea@skywalker.com": {
+          "leia@skywalker.com": {
             "password": "",
             "attr": {
               "originPlanet": "Alderaan"
+            },
+            "roles": [
+              "user"
+            ]
+          },
+          "poe@xwing.com": {
+            "password": "",
+            "attr": {
+              "originPlanet": "Jakku"
             },
             "roles": [
               "user"

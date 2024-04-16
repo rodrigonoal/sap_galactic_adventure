@@ -1,21 +1,38 @@
 require('dotenv').config();
 const nodemailer = require('nodemailer');
+const cds = require('@sap/cds');
 
 module.exports = function () {
-	this.before('CREATE', 'GalacticSpacefarers', (req) => {
-		const { stardustCollection, wormholeNavigationSkill } = req.data;
+	this.before('CREATE', 'GalacticSpacefarers', async (req) => {
+		const {
+			stardustCollection,
+			wormholeNavigationSkill,
+			department_ID,
+			position_ID,
+		} = req.data;
 
-        const maximumStardust = 255;
-        const maximumNavigationSkill = 10;
+		try {
+			const positionMatchesDepartment = await cds.ql.SELECT.one
+				.from('btp.spacefarers.Positions')
+				.where({ ID: position_ID, department_ID });
+
+			if (!positionMatchesDepartment)
+				cds.error('Position does not match the department');
+		} catch (error) {
+			cds.error('Failure to check if position matches the department');
+		}
+
+		const maximumStardust = 255;
+		const maximumNavigationSkill = 10;
 
 		const stardustBonus = 15;
 		const navigationSkillBonus = 1;
 
 		if (stardustCollection < maximumStardust - stardustBonus) {
-            req.data.stardustCollection += stardustBonus;
-        }else {
-            req.data.stardustCollection = 255;
-        }
+			req.data.stardustCollection += stardustBonus;
+		} else {
+			req.data.stardustCollection = 255;
+		}
 
 		if (wormholeNavigationSkill < maximumNavigationSkill)
 			req.data.wormholeNavigationSkill += navigationSkillBonus;
@@ -49,6 +66,21 @@ module.exports = function () {
 			console.log(`Message Sent: ${info.response}`);
 		});
 	});
+
+	this.before('UPDATE', 'GalacticSpacefarers', async (req) => {
+		const { department_ID, position_ID } = req.data;
+
+		try {
+			const positionMatchesDepartment = await cds.ql.SELECT.one
+				.from('btp.spacefarers.Positions')
+				.where({ ID: position_ID, department_ID });
+
+			if (!positionMatchesDepartment)
+				cds.error('Position does not match the department');
+		} catch (error) {
+			cds.error('Failure to check if position matches the department');
+		}
+	});
 };
 
-//for testing purposes: https://ethereal.email/
+//for e-mail testing purposes: https://ethereal.email/

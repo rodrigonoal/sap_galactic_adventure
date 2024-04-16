@@ -14,7 +14,6 @@ service SpacefarerService @(requires: 'authenticated-user') {
     annotate Positions with @odata.draft.enabled;
 
 }
-
 annotate SpacefarerService.GalacticSpacefarers with @(UI: {
     SelectionFields    : [
         department_id,
@@ -29,7 +28,7 @@ annotate SpacefarerService.GalacticSpacefarers with @(UI: {
         },
         {
             $Type: 'UI.DataField',
-            Value: email
+            Value: spacesuitColor
         },
         {
             $Type: 'UI.DataField',

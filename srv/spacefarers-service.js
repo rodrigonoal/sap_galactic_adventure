@@ -3,24 +3,8 @@ const nodemailer = require('nodemailer');
 const cds = require('@sap/cds');
 
 module.exports = function () {
-	this.before('CREATE', 'GalacticSpacefarers', async (req) => {
-		const {
-			stardustCollection,
-			wormholeNavigationSkill,
-			department_ID,
-			position_ID,
-		} = req.data;
-
-		try {
-			const positionMatchesDepartment = await cds.ql.SELECT.one
-				.from('btp.spacefarers.Positions')
-				.where({ ID: position_ID, department_ID });
-
-			if (!positionMatchesDepartment)
-				cds.error('Position does not match the department');
-		} catch (error) {
-			cds.error('Failure to check if position matches the department');
-		}
+	this.before('CREATE', 'GalacticSpacefarers', (req) => {
+		const { stardustCollection, wormholeNavigationSkill } = req.data;
 
 		const maximumStardust = 255;
 		const maximumNavigationSkill = 10;
@@ -65,21 +49,6 @@ module.exports = function () {
 			}
 			console.log(`Message Sent: ${info.response}`);
 		});
-	});
-
-	this.before('UPDATE', 'GalacticSpacefarers', async (req) => {
-		const { department_ID, position_ID } = req.data;
-
-		try {
-			const positionMatchesDepartment = await cds.ql.SELECT.one
-				.from('btp.spacefarers.Positions')
-				.where({ ID: position_ID, department_ID });
-
-			if (!positionMatchesDepartment)
-				cds.error('Position does not match the department');
-		} catch (error) {
-			cds.error('Failure to check if position matches the department');
-		}
 	});
 };
 

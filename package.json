@@ -27,6 +27,11 @@
           "url": "db.sqlite"
         }
       },
+      "query": {
+        "limit": {
+          "max": 20     
+        }
+      },
       "auth": {
         "kind": "mocked",
         "users": {

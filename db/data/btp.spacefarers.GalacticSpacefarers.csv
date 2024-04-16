@@ -1,6 +1,6 @@
 name,stardustCollection,wormholeNavigationSkill,originPlanet,spacesuitColor,email,position_ID,department_ID
 Leia,200,2,Alderaan,White,leia@skywalker.com,4d243c47-94bf-436e-a918-eeeeb9393b7f,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
-Lord Vader,66,5,Tatooine, Black,your@father.com,5576e024-4a40-43f0-b7c9-533c8ae7270e,1f98e726-8742-4d79-b74f-0bc41aeddefc
+Lord Vader,66,10,Tatooine, Black,your@father.com,5576e024-4a40-43f0-b7c9-533c8ae7270e,1f98e726-8742-4d79-b74f-0bc41aeddefc
 Rey,150,6,Jakku,Beige,rey@jediorder.com,09d93bae-44a4-4fef-aa13-2bf8d3e30a08,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
 Han Solo,100,7,Alderaan,Blue,han@solo.com,2c845f14-351f-49cf-b186-4fdb3d9f29be,5900c1d9-7c63-4726-8d84-9f227022dae1
 Padmé Amidala,180,5,Alderaan,Purple,padme@naboo.com,32fb6c88-93c9-48b8-aec0-3c442dd38381,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
@@ -14,6 +14,59 @@ C-3PO,60,3,Tatooine,Gold,c3po@droid.com,dc26ca40-2489-4da3-b29e-69e7afbed549,fff
 Kylo Ren,90,7,Jakku,Black,kylo@firstorder.com,5576e024-4a40-43f0-b7c9-533c8ae7270e,1f98e726-8742-4d79-b74f-0bc41aeddefc
 General Hux,20,6,Jakku,Grey,hux@firstorder.com,5576e024-4a40-43f0-b7c9-533c8ae7270e,1f98e726-8742-4d79-b74f-0bc41aeddefc
 Luke Skywalker,30,10,Tatooine,White,luke@skywalker.com,5576e024-4a40-43f0-b7c9-533c8ae7270e,1f98e726-8742-4d79-b74f-0bc41aeddefc
-Obi-Wan Kenobi,100,97,Tatooine,Beige,obiwan@jedi.com,5089e0b1-9c3a-4770-9c8a-c86e88604608,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
+Obi-Wan Kenobi,100,7,Tatooine,Beige,obiwan@jedi.com,5089e0b1-9c3a-4770-9c8a-c86e88604608,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
 Boba Fett,150,2,Alderaan,Green,boba@fett.com,6a1ab12f-ed76-4345-8266-bb7d123f96e9,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
 Yoda,250,2,Alderaan,Brown,yoda@jedi.com,86757c8c-894e-4e47-8372-cb2028e5240b,fffe74e7-0bf6-4f9f-9c8d-d3da8066d1ec
+Mace Windu,150,8,Jakku,Purple,mace@windu.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Ahsoka Tano,110,7,Jakku,White,ahsoka@tano.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Qui-Gon Jinn,90,6,Tatooine,Beige,quigon@jinn.com,32fb6c88-93c9-48b8-aec0-3c442dd38381,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
+Darth Maul,100,9,Tatooine,Red,darthmaul@sith.com,264f145e-3367-48ab-8a88-7a7d19bc5050,1f98e726-8742-4d79-b74f-0bc41aeddefc
+Captain Phasma,80,5,Jakku,Silver,captainphasma@firstorder.com,5576e024-4a40-43f0-b7c9-533c8ae7270e,1f98e726-8742-4d79-b74f-0bc41aeddefc
+Greedo,60,4,Tatooine,Green,greedo@bountyhunter.com,6a1ab12f-ed76-4345-8266-bb7d123f96e9,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
+Jabba the Hutt,40,2,Tatooine,Brown,jabba@hutt.com,264f145e-3367-48ab-8a88-7a7d19bc5050,bc25f3f3-960e-44f0-bd72-2df95f004d92
+Aayla Secura,130,8,Jakku,Blue,aayla@secura.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Kit Fisto,110,7,Jakku,Green,kit@fisto.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Count Dooku,70,6,Tatooine,Red,countdooku@sith.com,32fb6c88-93c9-48b8-aec0-3c442dd38381,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
+Poggle the Lesser,50,4,Tatooine,Yellow,poggle@geonosian.com,264f145e-3367-48ab-8a88-7a7d19bc5050,bc25f3f3-960e-44f0-bd72-2df95f004d92
+Watto,60,3,Tatooine,Blue,watto@toydarian.com,264f145e-3367-48ab-8a88-7a7d19bc5050,bc25f3f3-960e-44f0-bd72-2df95f004d92
+Shaak Ti,90,6,Jakku,White,shaakti@togruta.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Cad Bane,70,5,Jakku,Blue,cadbane@bountyhunter.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Dengar,60,4,Tatooine,Brown,dengar@bountyhunter.com,6a1ab12f-ed76-4345-8266-bb7d123f96e9,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
+IG-88,70,2,Tatooine,Grey,ig88@droid.com,264f145e-3367-48ab-8a88-7a7d19bc5050,fffe74e7-0bf6-4f9f-9c8d-d3da8066d1ec
+Bossk,60,3,Tatooine,Green,bossk@bountyhunter.com,6a1ab12f-ed76-4345-8266-bb7d123f96e9,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
+Faye Valentine,120,7,Jakku,Red,faye@redtail.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Spike Spiegel,140,8,Tatooine,Blue,spike@bebop.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Jet Black,100,6,Alderaan,Black,jet@bebop.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Edward Wong Hau Pepelu Tivrusky IV,80,5,Jakku,Green,edward@data.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Ein,50,4,Tatooine,Brown,ein@corgi.com,6a1ab12f-ed76-4345-8266-bb7d123f96e9,d8742191-9bbe-455e-9bdb-d2fcad0e34a6
+John Doe,90,6,Jakku,White,johndoe@example.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Jane Smith,110,7,Tatooine,Blue,janesmith@example.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Max Power,80,5,Alderaan,Yellow,maxpower@example.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Tina Turner,120,8,Tatooine,Red,tinaturner@example.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Rick Sanchez,150,6,Jakku,Green,rick@example.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Morty Smith,100,7,Tatooine,Blue,morty@example.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Princess Peach,80,5,Alderaan,Pink,princesspeach@mushroomkingdom.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Mario,110,8,Tatooine,Red,mario@mushroomkingdom.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Luigi,90,6,Jakku,Green,luigi@mushroomkingdom.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Bowser,120,7,Tatooine,Orange,bowser@koopa.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Donkey Kong,80,5,Alderaan,Brown,donkeykong@kong.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Diddy Kong,100,8,Jakku,Red,diddykong@kong.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Princess Daisy,110,6,Tatooine,Yellow,princessdaisy@mushroomkingdom.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Wario,90,7,Jakku,Purple,wario@wa.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Waluigi,120,5,Tatooine,Blue,waluigi@wa.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Samus Aran,130,8,Alderaan,Orange,samus@bountyhunter.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Link,110,7,Jakku,Green,link@hyrule.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Princess Zelda,90,6,Tatooine,Purple,zelda@hyrule.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Ganondorf,120,5,Jakku,Black,ganondorf@gerudo.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Sonic the Hedgehog,100,8,Tatooine,Blue,sonic@sega.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Miles "Tails" Prower,80,6,Alderaan,Yellow,tails@sega.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Knuckles the Echidna,110,7,Jakku,Red,knuckles@sega.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Princess Rosalina,90,5,Tatooine,Blue,rosalina@star.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Donkey,120,8,Jakku,Brown,donkey@shrek.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Shrek,140,6,Alderaan,Green,shrek@swamp.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Fiona,110,7,Jakku,Red,fiona@swamp.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Puss in Boots,80,5,Tatooine,Orange,puss@boots.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Ferb Fletcher,100,8,Jakku,Green,ferb@phineas.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Phineas Flynn,120,6,Alderaan,Red,phineas@ferb.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Candace Flynn,90,7,Tatooine,Blue,candace@flynn.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88-7a7d19bc5050
+Isabella Garcia-Shapiro,90,5,Tatooine,Pink,isabella@shapiro.com,3e02d1c8-5b6d-4da0-bfa9-52b6f2ad8e1d,264f145e-3367-48ab-8a88

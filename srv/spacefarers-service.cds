@@ -8,7 +8,7 @@ service SpacefarerService @(requires: 'authenticated-user') {
     }]
     entity GalacticSpacefarers as select from bs.GalacticSpacefarers;
     annotate GalacticSpacefarers with @odata.draft.enabled;
-    entity Positions           as select from bs.Positions;
-    entity Departments         as select from bs.Departments;
+    @readonly entity Positions           as select from bs.Positions;
+    @readonly entity Departments         as select from bs.Departments;
 
 }

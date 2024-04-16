@@ -1,5 +1,6 @@
 using btp.spacefarers as bs from '../db/data-models';
 
+@cds.query.limit.default: 10
 service SpacefarerService @(requires: 'authenticated-user') {
     @restrict: [{
         grant: '*',
@@ -23,20 +24,39 @@ annotate SpacefarerService.GalacticSpacefarers with @(UI: {
     //Columns
     LineItem           : [
         {
-            $Type: 'UI.DataField',
-            Value: name
+            $Type : 'UI.DataField',
+            Value : name,
+            Label : 'Name',
+            ![@UI.Importance] : #High,
         },
         {
-            $Type: 'UI.DataField',
-            Value: spacesuitColor
+            $Type : 'UI.DataField',
+            Value : stardustCollection,
+            Label : 'Stardust Collection',
+            ![@UI.Importance] : #High,
         },
         {
-            $Type: 'UI.DataField',
-            Value: department_id
+            $Type : 'UI.DataField',
+            Value : spacesuitColor,
+            Label : 'Spacesuit Color',
+            ![@UI.Importance] : #High,
         },
         {
-            $Type: 'UI.DataField',
-            Value: position_id
+            $Type : 'UI.DataField',
+            Value : department.name,
+            Label : 'Department',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : position.name,
+            Label : 'Position',
+        },
+        {
+            $Type : 'UI.DataFieldForAnnotation',
+            Label : 'Wormhole Navigation Skill',
+            Value : wormholeNavigationSkill,
+            Target : '@UI.FieldGroup#Default',
+            ![@UI.Importance] : #High,
         },
     ],
 

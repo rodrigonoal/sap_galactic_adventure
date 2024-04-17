@@ -45,7 +45,7 @@ annotate service.GalacticSpacefarers with @(UI: {
     Facets                             : [{
         $Type : 'UI.ReferenceFacet',
         ID    : 'DefaultFacet',
-        Label : 'General Information',
+        Label : 'Spacefarer Information',
         Target: '@UI.FieldGroup#Default',
     }, ],
     HeaderInfo                         : {
@@ -53,10 +53,9 @@ annotate service.GalacticSpacefarers with @(UI: {
         TypeName      : 'Galactic Spacefarer',
         TypeNamePlural: 'Galactic Spacefarers'
     },
-    SelectionFields                    : [
-        position_ID,
-        // position.department_ID // filter selection
-    ],
+    SelectionFields                    : [position_ID,
+                                                       // position.department_ID // filter selection
+                                         ],
     DataPoint #WormholeNavigationRating: {
         Value        : wormholeNavigationSkill,
         TargetValue  : 10,
@@ -164,4 +163,5 @@ annotate SpacefarerService.GalacticSpacefarers with {
     originPlanet            @title: 'Origin Planet';
     spacesuitColor          @title: 'Spacesuit Color';
     email                   @title: 'Email';
+    position                @title: 'Position'
 }
